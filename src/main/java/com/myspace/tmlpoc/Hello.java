@@ -26,6 +26,11 @@ public class Hello extends org.drools.persistence.jpa.marshaller.VariableEntity 
 	public Hello() {
 	}
 
+	@Override
+	public String toString() {
+		return "Hello [id=" + id + ", test1=" + test1 + ", test2=" + test2 + ", test3=" + test3 + "]";
+	}
+
 	public java.lang.Long getId() {
 		return this.id;
 	}
