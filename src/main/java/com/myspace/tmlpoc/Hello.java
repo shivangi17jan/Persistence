@@ -6,7 +6,7 @@ package com.myspace.tmlpoc;
 
 @javax.persistence.Entity
 @javax.persistence.Table(name = "TMLPOC")
-public class hello extends org.drools.persistence.jpa.marshaller.VariableEntity implements java.io.Serializable {
+public class Hello extends org.drools.persistence.jpa.marshaller.VariableEntity implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -23,7 +23,7 @@ public class hello extends org.drools.persistence.jpa.marshaller.VariableEntity 
 
 	private java.lang.Integer test3;
 
-	public hello() {
+	public Hello() {
 	}
 
 	public java.lang.Long getId() {
@@ -58,7 +58,7 @@ public class hello extends org.drools.persistence.jpa.marshaller.VariableEntity 
 		this.test3 = test3;
 	}
 
-	public hello(java.lang.Long id, java.lang.String test1,
+	public Hello(java.lang.Long id, java.lang.String test1,
 			java.lang.String test2, java.lang.Integer test3) {
 		this.id = id;
 		this.test1 = test1;
