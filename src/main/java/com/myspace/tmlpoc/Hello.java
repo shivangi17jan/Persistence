@@ -14,8 +14,9 @@ public class Hello extends org.drools.persistence.jpa.marshaller.VariableEntity 
 	@javax.persistence.Id
 	@javax.persistence.SequenceGenerator(sequenceName = "HELLO_ID_SEQ", name = "HELLO_ID_GENERATOR")
 
-
 	private java.lang.Long id;
+
+	private Long piid;
 
 	private java.lang.String test1;
 
@@ -28,7 +29,8 @@ public class Hello extends org.drools.persistence.jpa.marshaller.VariableEntity 
 
 	@Override
 	public String toString() {
-		return "Hello [id=" + id + ", test1=" + test1 + ", test2=" + test2 + ", test3=" + test3 + "]";
+		return "Hello [id=" + id + ", piid=" + piid + ", test1=" + test1 + ", test2=" + test2 + ", test3=" + test3
+				+ "]";
 	}
 
 	public java.lang.Long getId() {
@@ -61,6 +63,14 @@ public class Hello extends org.drools.persistence.jpa.marshaller.VariableEntity 
 
 	public void setTest3(java.lang.Integer test3) {
 		this.test3 = test3;
+	}
+
+	public Long getPiid() {
+		return piid;
+	}
+
+	public void setPiid(Long piid) {
+		this.piid = piid;
 	}
 
 	public Hello(java.lang.Long id, java.lang.String test1,
